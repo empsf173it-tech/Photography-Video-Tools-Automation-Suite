@@ -1,0 +1,383 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Contact Us - RETOUCHÉ</title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <script>
+   tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#fbf8f1',
+                            100: '#f6efdd',
+                            200: '#eddcb9',
+                            300: '#e1c38e',
+                            400: '#d4a85f',
+                            500: '#c5923b',
+                            600: '#9b6c23',
+                            700: '#7c521f',
+                            800: '#67421e',
+                            900: '#55371c',
+                            950: '#301c0c',
+                        },
+                        luxury: {
+                            50: '#f7f7f8',
+                            100: '#efeff1',
+                            200: '#dcdce0',
+                            300: '#bebec6',
+                            400: '#9b9ba6',
+                            500: '#7e7e8b',
+                            600: '#646471',
+                            700: '#53535d',
+                            800: '#46464d',
+                            900: '#1a1a1a',
+                            950: '#0a0a0a',
+                        }
+                    }
+                }
+            }
+        } } }
+  </script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  <script src="https://unpkg.com/@phosphor-icons/web">
+  </script>
+  <link href="assets/css/style.css" rel="stylesheet"/>
+  <link href="assets/css/dark-mode.css" rel="stylesheet"/>
+  <link href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" rel="icon"/>
+ </head>
+ <body class="antialiased transition-colors duration-300">
+  <!-- Header / Navbar -->
+  <header class="fixed w-full top-0 z-50 glass transition-all duration-300" id="navbar">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-20">
+     <!-- Logo -->
+     <div class="flex-shrink-0 flex items-center">
+       <a class="font-serif text-2xl font-bold tracking-[0.3em] flex items-center group" href="index.html">
+        <span class="logo-bolt me-3 transition-all duration-300">⚡</span>RETOUCHÉ
+       </a>
+     </div>
+     <!-- Desktop Menu -->
+     <nav class="hidden lg:flex space-x-8 items-center">
+      <a class="text-sm nav-link" href="index.html">Home</a>
+      <a class="text-sm nav-link" href="about.html">
+       About
+      </a>
+      <a class="text-sm nav-link" href="services.html">
+       Services
+      </a>
+      <a class="text-sm nav-link" href="niche.html">
+       Fashion
+      </a>
+      <a class="text-sm nav-link" href="portfolio.html">
+       Portfolio
+      </a>
+      <a class="text-sm nav-link active" href="contact.html">
+       Contact
+      </a>
+     </nav>
+     <!-- Actions -->
+     <div class="hidden lg:flex items-center space-x-4">
+      <button class="theme-toggle p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-all transform hover:rotate-12 active:scale-90">
+       <i class="ph ph-moon text-xl dark:hidden">
+       </i>
+       <i class="ph ph-sun text-xl hidden dark:block">
+       </i>
+      </button>
+      <a class="bg-primary-700 hover:bg-primary-800 text-white dark:bg-primary-400 dark:text-black dark:hover:bg-primary-300 px-6 py-2 rounded-full text-sm font-bold hover:scale-105 transition-all shadow-md ms-2" href="login.html">
+       Login
+      </a>
+     </div>
+     <!-- Mobile Menu Button -->
+     <div class="lg:hidden flex items-center space-x-4">
+       <button class="theme-toggle p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-all transform hover:rotate-12 active:scale-90">
+       <i class="ph ph-moon text-xl dark:hidden">
+       </i>
+       <i class="ph ph-sun text-xl hidden dark:block">
+       </i>
+      </button>
+      <button class="p-2" id="mobile-menu-btn">
+       <i class="ph ph-list text-2xl">
+       </i>
+      </button>
+     </div>
+    </div>
+   </div>
+   <!-- Mobile Menu -->
+   <div class="hidden lg:hidden glass border-t border-gray-200 dark:border-gray-800" id="mobile-menu">
+    <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+     <a class="flex items-center px-3 py-2 rounded-md text-base font-medium mobile-nav-link" href="index.html"><i class="ph ph-list me-2"></i>Home</a>
+     <a class="flex items-center px-3 py-2 rounded-md text-base font-medium mobile-nav-link" href="about.html">
+      <i class="ph ph-list me-2"></i>
+      About
+     </a>
+     <a class="flex items-center px-3 py-2 rounded-md text-base font-medium mobile-nav-link" href="services.html">
+      <i class="ph ph-list me-2"></i>
+      Services
+     </a>
+     <a class="flex items-center px-3 py-2 rounded-md text-base font-medium mobile-nav-link" href="niche.html">
+      <i class="ph ph-list me-2"></i>
+      Fashion
+     </a>
+     <a class="flex items-center px-3 py-2 rounded-md text-base font-medium mobile-nav-link" href="portfolio.html">
+      <i class="ph ph-list me-2"></i>
+      Portfolio
+     </a>
+      <a class="flex items-center px-3 py-2 rounded-md text-base font-medium mobile-nav-link active" href="contact.html">
+      <i class="ph ph-list me-2"></i>
+      Contact
+     </a>
+      <div class="border-t border-gray-200 dark:border-gray-700 pt-4 pb-2 space-y-3">
+       <a class="block w-full text-center bg-primary-700 hover:bg-primary-800 text-white dark:bg-primary-400 dark:text-black dark:hover:bg-primary-300 px-6 py-3 rounded-xl text-sm font-bold shadow-md" href="login.html">
+        Login
+       </a>
+      </div>
+    </div>
+   </div>
+  </header>
+  <main class="pt-32">
+   <!-- SECTION 1: Contact hero section -->
+   <section class="py-12 bg-white dark:bg-black text-center">
+    <div class="max-w-3xl mx-auto px-4">
+     <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4" data-aos="fade-up">
+      Get in Touch
+     </p>
+     <h1 class="font-serif text-4xl sm:text-5xl md:text-7xl font-bold mb-6" data-aos="fade-up" data-aos-delay="100">
+      Let's Discuss Your Project
+     </h1>
+     <p class="text-gray-500 text-lg" data-aos="fade-up" data-aos-delay="200">
+      Whether you need a single editorial cover or a massive e-commerce batch, we're ready to elevate your imagery.
+     </p>
+    </div>
+   </section>
+   <!-- SECTION 2 & 3: Form & Studio Info -->
+   <section class="py-16 bg-white dark:bg-black">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+      <!-- Advanced contact form -->
+      <div data-aos="fade-right">
+       <form class="space-y-6 bg-luxury-50 dark:bg-luxury-900 p-10 rounded-2xl">
+        <div class="grid grid-cols-1 gap-6">
+         <div>
+          <label class="block text-xs font-bold uppercase tracking-wider mb-2">
+           First Name
+          </label>
+          <input class="w-full bg-white dark:bg-black border border-gray-200 dark:border-gray-800 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-gray-500" type="text"/>
+         </div>
+         <div>
+          <label class="block text-xs font-bold uppercase tracking-wider mb-2">
+           Last Name
+          </label>
+          <input class="w-full bg-white dark:bg-black border border-gray-200 dark:border-gray-800 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-gray-500" type="text"/>
+         </div>
+        </div>
+        <div>
+         <label class="block text-xs font-bold uppercase tracking-wider mb-2">
+          Email Address
+         </label>
+         <input class="w-full bg-white dark:bg-black border border-gray-200 dark:border-gray-800 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-gray-500" type="email"/>
+        </div>
+        <div>
+         <label class="block text-xs font-bold uppercase tracking-wider mb-2">
+          Service Required
+         </label>
+         <select class="w-full bg-white dark:bg-black border border-gray-200 dark:border-gray-800 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-gray-500">
+          <option>
+           High-End Beauty
+          </option>
+          <option>
+           Fashion Editorial
+          </option>
+          <option>
+           Commercial Batch
+          </option>
+          <option>
+           Other
+          </option>
+         </select>
+        </div>
+        <div>
+         <label class="block text-xs font-bold uppercase tracking-wider mb-2">
+          Project Details
+         </label>
+         <textarea class="w-full bg-white dark:bg-black border border-gray-200 dark:border-gray-800 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-gray-500" rows="4"></textarea>
+        </div>
+        <button class="w-full bg-black text-white dark:bg-white dark:text-black font-bold uppercase tracking-wider py-4 rounded-lg hover:opacity-90 transition-opacity" type="button">
+         Submit Inquiry
+        </button>
+       </form>
+      </div>
+      <!-- Studio information and social links -->
+      <div class="flex flex-col justify-center text-center items-center" data-aos="fade-left">
+       <div class="mb-12">
+        <h3 class="font-serif text-4xl font-bold mb-8">
+         Studio Information
+        </h3>
+        <p class="text-gray-500 dark:text-gray-400 text-lg mb-8 max-w-md mx-auto leading-relaxed">
+         Our flagship studio in the heart of Milan's fashion district is where the magic happens. We're available for both remote collaborations and in-person consultations by appointment.
+        </p>
+        <div class="space-y-4 mb-8">
+         <p class="text-gray-800 dark:text-gray-200 text-xl font-medium">
+          124 Via della Spiga<br>
+          Milano, MI 20121, Italy
+         </p>
+         <p class="text-gray-800 dark:text-gray-200 text-xl font-medium">
+          +39 02 1234 5678
+         </p>
+        </div>
+        <p class="text-2xl text-black dark:text-white font-bold border-b-2 border-black dark:border-white pb-1 inline-block">
+         hello@raw.com
+        </p>
+       </div>
+       <div class="w-full">
+        <h4 class="text-xs font-bold uppercase tracking-[0.3em] text-gray-400 mb-6">
+         Follow Us
+        </h4>
+        <div class="flex space-x-6 justify-center">
+         <a class="w-12 h-12 rounded-full border border-gray-200 dark:border-gray-800 flex items-center justify-center hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all duration-300 group" href="#">
+          <i class="ph ph-instagram-logo text-xl transition-transform duration-300 group-hover:scale-125">
+          </i>
+         </a>
+         <a class="w-12 h-12 rounded-full border border-gray-200 dark:border-gray-800 flex items-center justify-center hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all duration-300 group" href="#">
+          <i class="ph ph-facebook-logo text-xl transition-transform duration-300 group-hover:scale-125">
+          </i>
+         </a>
+         <a class="w-12 h-12 rounded-full border border-gray-200 dark:border-gray-800 flex items-center justify-center hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all duration-300 group" href="#">
+          <i class="ph ph-linkedin-logo text-xl transition-transform duration-300 group-hover:scale-125">
+          </i>
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- SECTION 4: Google Maps integration -->
+   <section class="py-16">
+    <div class="w-full h-96 bg-gray-200 dark:bg-gray-800 filter grayscale" data-aos="fade-up">
+     <!-- Embedded Map iframe -->
+     <iframe allowfullscreen="" height="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2798.2430030584483!2d9.192305515555462!3d45.46907577910086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c6b24bb88317%3A0xcb1cc59c6b758b2e!2sVia%20della%20Spiga%2C%20Milano%20MI%2C%20Italy!5e0!3m2!1sen!2sus!4v1680000000000!5m2!1sen!2sus" style="border:0;" width="100%">
+     </iframe>
+    </div>
+   </section>
+  </main>
+  <!-- Footer -->
+  <footer class="bg-white dark:bg-luxury-900 pt-20 pb-10 border-t border-gray-100 dark:border-gray-800">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+      <div class="col-span-1">
+       <a class="font-serif text-2xl font-bold tracking-[0.3em] flex items-center mb-6 group" href="index.html">
+        <span class="logo-bolt mr-3 transition-all duration-300">⚡</span>RETOUCHÉ
+       </a>
+       <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed mb-8">
+        Premium photography retouching services tailored for high-end fashion campaigns. Elevating visual narratives with precision and artistry.
+       </p>
+       <div class="flex space-x-4">
+        <a class="w-10 h-10 flex items-center justify-center rounded-full bg-black/5 dark:bg-white/10 text-gray-700 dark:text-gray-300 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all duration-300 group" href="#">
+         <i class="ph ph-instagram-logo text-lg transition-transform duration-300 group-hover:scale-110">
+         </i>
+        </a>
+        <a class="w-10 h-10 flex items-center justify-center rounded-full bg-black/5 dark:bg-white/10 text-gray-700 dark:text-gray-300 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all duration-300 group" href="#">
+         <i class="ph ph-facebook-logo text-lg transition-transform duration-300 group-hover:scale-110">
+         </i>
+        </a>
+        <a class="w-10 h-10 flex items-center justify-center rounded-full bg-black/5 dark:bg-white/10 text-gray-700 dark:text-gray-300 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all duration-300 group" href="#">
+         <i class="ph ph-linkedin-logo text-lg transition-transform duration-300 group-hover:scale-110">
+         </i>
+        </a>
+       </div>
+      </div>
+      <div>
+       <h5 class="font-bold mb-6 uppercase text-xs tracking-widest">
+        Platform
+       </h5>
+       <ul class="space-y-4 text-sm text-gray-500 dark:text-gray-400">
+        <li>
+         <a class="hover:text-black dark:hover:text-white transition-colors" href="services.html">
+          Services
+         </a>
+        </li>
+        <li>
+         <a class="hover:text-black dark:hover:text-white transition-colors" href="pricing.html">
+          Pricing
+         </a>
+        </li>
+        <li>
+         <a class="hover:text-black dark:hover:text-white transition-colors" href="dashboard.html">
+          Client Portal
+         </a>
+        </li>
+        <li>
+         <a class="hover:text-black dark:hover:text-white transition-colors" href="blog.html">
+          Journal
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div>
+       <h5 class="font-bold mb-6 uppercase text-xs tracking-widest">
+        Company
+       </h5>
+       <ul class="space-y-4 text-sm text-gray-500 dark:text-gray-400">
+        <li>
+         <a class="hover:text-black dark:hover:text-white transition-colors" href="index.html">
+          Home
+         </a>
+        </li>
+        <li>
+         <a class="hover:text-black dark:hover:text-white transition-colors" href="about.html">
+          About Us
+         </a>
+        </li>
+        <li>
+         <a class="hover:text-black dark:hover:text-white transition-colors" href="niche.html">
+          Fashion
+         </a>
+        </li>
+        <li>
+         <a class="hover:text-black dark:hover:text-white transition-colors" href="portfolio.html">
+          Portfolio
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div class="col-span-1">
+       <h5 class="font-bold mb-6 uppercase text-xs tracking-widest">
+        Newsletter
+       </h5>
+       <p class="text-xs text-gray-500 dark:text-gray-400 mb-6 leading-relaxed">
+        Subscribe to receive the latest updates and retouching tips directly in your inbox.
+       </p>
+       <form class="space-y-3">
+        <input class="w-full bg-gray-50 dark:bg-black/20 border border-gray-100 dark:border-gray-800 rounded-xl px-4 py-3 text-xs focus:outline-none focus:border-black dark:focus:border-white transition-colors" placeholder="Email Address" type="email"/>
+        <button class="w-full bg-primary-700 hover:bg-primary-800 text-white dark:bg-primary-400 dark:text-black dark:hover:bg-primary-300 rounded-xl py-3 text-xs font-bold uppercase tracking-widest shadow-md transition-opacity" type="submit">
+         Subscribe
+        </button>
+       </form>
+      </div>
+     </div></div>
+    </div>
+    <div class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-gray-100 dark:border-gray-800 text-xs text-gray-400">
+     <p>
+      © 2026 RETOUCHÉ. All rights reserved.
+     </p>
+     
+    </div>
+   </div>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+  </script>
+  <script src="assets/js/main.js">
+  </script>
+ 
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <i class="ph ph-caret-up"></i>
+  </button>
+ </body>
+</html>
+
