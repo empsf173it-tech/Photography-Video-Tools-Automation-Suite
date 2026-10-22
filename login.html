@@ -11,38 +11,40 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
    tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        primary: {
-                            50: '#fbf8f1',
-                            100: '#f6efdd',
-                            200: '#eddcb9',
-                            300: '#e1c38e',
-                            400: '#d4a85f',
-                            500: '#c5923b',
-                            600: '#9b6c23',
-                            700: '#7c521f',
-                            800: '#67421e',
-                            900: '#55371c',
-                            950: '#301c0c',
-                        },
-                        luxury: {
-                            50: '#f7f7f8',
-                            100: '#efeff1',
-                            200: '#dcdce0',
-                            300: '#bebec6',
-                            400: '#9b9ba6',
-                            500: '#7e7e8b',
-                            600: '#646471',
-                            700: '#53535d',
-                            800: '#46464d',
-                            900: '#1a1a1a',
-                            950: '#0a0a0a',
-                        }
-                    }
-                }
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              50: '#fbf8f1',
+              100: '#f6efdd',
+              200: '#eddcb9',
+              300: '#e1c38e',
+              400: '#d4a85f',
+              500: '#c5923b',
+              600: '#9b6c23',
+              700: '#7c521f',
+              800: '#67421e',
+              900: '#55371c',
+              950: '#301c0c',
+            },
+            luxury: {
+              50: '#f7f7f8',
+              100: '#efeff1',
+              200: '#dcdce0',
+              300: '#bebec6',
+              400: '#9b9ba6',
+              500: '#7e7e8b',
+              600: '#646471',
+              700: '#53535d',
+              800: '#46464d',
+              900: '#1a1a1a',
+              950: '#0a0a0a',
+            }
+          }
+        }
+      }
+    };
             }
         }
             }
@@ -94,13 +96,13 @@
 
             <form class="space-y-3 md:space-y-6">
                 <div>
-                    <label class="block text-xs font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400 mb-2" for="email">Email Address</label>
-                    <input class="w-full bg-white/50 dark:bg-black/50 border border-gray-200 dark:border-gray-800 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-black dark:focus:ring-white transition-all text-sm" id="email" placeholder="name@example.com" type="email" required/>
+                    <label class="block text-xs font-bold uppercase tracking-widest text-gray-700 dark:text-gray-200 mb-2" for="email">Email Address</label>
+                    <input class="auth-input w-full rounded-xl px-4 py-3 outline-none transition-all text-sm" id="email" placeholder="name@example.com" type="email" required/>
                 </div>
                 <div>
-                    <label class="block text-xs font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400 mb-2" for="password">Password</label>
+                    <label class="block text-xs font-bold uppercase tracking-widest text-gray-700 dark:text-gray-200 mb-2" for="password">Password</label>
                     <div class="relative">
-                        <input class="w-full bg-white/50 dark:bg-black/50 border border-gray-200 dark:border-gray-800 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-black dark:focus:ring-white transition-all text-sm" id="password" placeholder="••••••••" type="password" required/>
+                        <input class="auth-input w-full rounded-xl px-4 py-3 outline-none transition-all text-sm" id="password" placeholder="••••••••" type="password" required/>
                         <button type="button" id="toggle-password" class="absolute end-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-black dark:hover:text-white transition-colors">
                             <i class="ph ph-eye text-xl" id="eye-icon"></i>
                         </button>
@@ -115,9 +117,7 @@
                     <a href="#" class="text-[10px] uppercase font-bold tracking-widest text-gray-400 hover:text-black dark:hover:text-white transition-colors">Forgot password?</a>
                 </div>
 
-                <button class="w-full bg-primary-700 hover:bg-primary-800 text-white dark:bg-primary-400 dark:text-black dark:hover:bg-primary-300 font-bold py-3 md:py-4 rounded-xl hover:scale-[1.02] active:scale-[0.98] transition-all shadow-lg" type="submit">
-                    Login
-                </button>
+                <button class="btn-primary cta-tab-btn w-full font-bold py-3.5 md:py-4 rounded-xl shadow-lg cursor-pointer text-sm md:text-base uppercase tracking-wider transition-all" type="submit">Login</button>
 
                 <!-- Social Login -->
                 <div class="relative py-1 md:py-4">
@@ -125,16 +125,16 @@
                         <div class="w-full border-t border-gray-200 dark:border-gray-800"></div>
                     </div>
                     <div class="relative flex justify-center text-xs uppercase font-bold tracking-widest">
-                        <span class="bg-white dark:bg-[#2a2a2a] px-4 text-gray-400">Or continue with</span>
+                        <span class="bg-white dark:bg-[#1a1a1a] px-4 text-gray-600 dark:text-gray-300 font-semibold">Or continue with</span>
                     </div>
                 </div>
 
                 <div class="grid grid-cols-2 gap-4">
-                    <button type="button" class="flex items-center justify-center bg-white/50 dark:bg-black/50 border border-gray-200 dark:border-gray-800 py-3 rounded-xl hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all group">
+                    <button type="button" class="auth-social-btn flex items-center justify-center bg-white/80 dark:bg-white/5 border border-gray-200 dark:border-white/10 text-gray-800 dark:text-gray-200 py-3 rounded-xl transition-all group cursor-pointer">
                         <i class="ph ph-google-logo text-xl me-2 transition-transform group-hover:scale-110"></i>
                         <span class="text-xs font-bold uppercase tracking-widest">Google</span>
                     </button>
-                    <button type="button" class="flex items-center justify-center bg-white/50 dark:bg-black/50 border border-gray-200 dark:border-gray-800 py-3 rounded-xl hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all group">
+                    <button type="button" class="auth-social-btn flex items-center justify-center bg-white/80 dark:bg-white/5 border border-gray-200 dark:border-white/10 text-gray-800 dark:text-gray-200 py-3 rounded-xl transition-all group cursor-pointer">
                         <i class="ph ph-apple-logo text-xl me-2 transition-transform group-hover:scale-110"></i>
                         <span class="text-xs font-bold uppercase tracking-widest">Apple</span>
                     </button>

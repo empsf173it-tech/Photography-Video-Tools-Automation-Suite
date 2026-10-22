@@ -9,38 +9,40 @@
   </script>
   <script>
    tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        primary: {
-                            50: '#fbf8f1',
-                            100: '#f6efdd',
-                            200: '#eddcb9',
-                            300: '#e1c38e',
-                            400: '#d4a85f',
-                            500: '#c5923b',
-                            600: '#9b6c23',
-                            700: '#7c521f',
-                            800: '#67421e',
-                            900: '#55371c',
-                            950: '#301c0c',
-                        },
-                        luxury: {
-                            50: '#f7f7f8',
-                            100: '#efeff1',
-                            200: '#dcdce0',
-                            300: '#bebec6',
-                            400: '#9b9ba6',
-                            500: '#7e7e8b',
-                            600: '#646471',
-                            700: '#53535d',
-                            800: '#46464d',
-                            900: '#1a1a1a',
-                            950: '#0a0a0a',
-                        }
-                    }
-                }
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              50: '#fbf8f1',
+              100: '#f6efdd',
+              200: '#eddcb9',
+              300: '#e1c38e',
+              400: '#d4a85f',
+              500: '#c5923b',
+              600: '#9b6c23',
+              700: '#7c521f',
+              800: '#67421e',
+              900: '#55371c',
+              950: '#301c0c',
+            },
+            luxury: {
+              50: '#f7f7f8',
+              100: '#efeff1',
+              200: '#dcdce0',
+              300: '#bebec6',
+              400: '#9b9ba6',
+              500: '#7e7e8b',
+              600: '#646471',
+              700: '#53535d',
+              800: '#46464d',
+              900: '#1a1a1a',
+              950: '#0a0a0a',
+            }
+          }
+        }
+      }
+    };
             }
         } } }
   </script>
@@ -159,7 +161,7 @@
       </div>
       <div class="relative" data-aos="fade-left">
        <img alt="Studio" class="rounded-2xl shadow-2xl" src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&amp;fit=crop&amp;q=80&amp;w=1000"/>
-       <div class="absolute -bottom-8 -left-8 bg-black text-white p-8 rounded-xl hidden md:block">
+       <div class="absolute bottom-4 left-4 md:-bottom-8 md:-left-8 bg-black text-white p-4 md:p-8 rounded-xl shadow-2xl block z-20 border border-white/10">
         <p class="text-4xl font-serif font-bold mb-1">
          15+
         </p>
@@ -174,33 +176,41 @@
     <!-- SECTION 2: Mission and creative philosophy -->
     <section class="py-24 bg-luxury-50 dark:bg-luxury-900">
      <div class="max-w-4xl mx-auto px-4 text-center">
-      <i class="ph ph-diamond text-4xl text-black dark:text-white mb-6" data-aos="fade-up">
-      </i>
+      
       <h2 class="font-serif text-3xl md:text-5xl font-bold leading-tight mb-8" data-aos="fade-up" data-aos-delay="100">
        "We strive for the invisible edit. The best retouching is the kind you never notice."
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 text-left">
-       <div data-aos="fade-up" data-aos-delay="200">
-        <h4 class="font-bold uppercase tracking-widest text-sm mb-3">
+       <div class="about-feature-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="w-12 h-12 rounded-xl bg-primary-100 dark:bg-primary-950/60 text-primary-700 dark:text-primary-400 flex items-center justify-center mb-6">
+         <i class="ph ph-shield-check text-2xl"></i>
+        </div>
+        <h4 class="font-bold uppercase tracking-widest text-base mb-3 text-black dark:text-white">
          Authenticity
         </h4>
-        <p class="text-sm text-gray-500">
+        <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
          Preserving the integrity of the original photograph while enhancing its core strengths.
         </p>
        </div>
-       <div data-aos="fade-up" data-aos-delay="300">
-        <h4 class="font-bold uppercase tracking-widest text-sm mb-3">
+       <div class="about-feature-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="w-12 h-12 rounded-xl bg-primary-100 dark:bg-primary-950/60 text-primary-700 dark:text-primary-400 flex items-center justify-center mb-6">
+         <i class="ph ph-crosshair text-2xl"></i>
+        </div>
+        <h4 class="font-bold uppercase tracking-widest text-base mb-3 text-black dark:text-white">
          Precision
         </h4>
-        <p class="text-sm text-gray-500">
+        <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
          Meticulous pixel-level attention to detail, ensuring flawless rendering on any medium.
         </p>
        </div>
-       <div data-aos="fade-up" data-aos-delay="400">
-        <h4 class="font-bold uppercase tracking-widest text-sm mb-3">
+       <div class="about-feature-card" data-aos="fade-up" data-aos-delay="400">
+        <div class="w-12 h-12 rounded-xl bg-primary-100 dark:bg-primary-950/60 text-primary-700 dark:text-primary-400 flex items-center justify-center mb-6">
+         <i class="ph ph-lock-key text-2xl"></i>
+        </div>
+        <h4 class="font-bold uppercase tracking-widest text-base mb-3 text-black dark:text-white">
          Discretion
         </h4>
-        <p class="text-sm text-gray-500">
+        <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
          Absolute confidentiality for unreleased campaigns and high-profile editorial subjects.
         </p>
        </div>
@@ -214,7 +224,7 @@
       <div class="flex flex-col md:flex-row items-center gap-20">
        <div class="w-full md:w-1/2 order-2 md:order-1" data-aos="fade-right">
         <div class="relative">
-         <img alt="The Process" class="rounded-2xl shadow-2xl relative z-10" src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?auto=format&amp;fit=crop&amp;q=80&amp;w=800"/>
+         <img alt="The Process" class="rounded-2xl shadow-2xl relative z-10 w-full max-h-[460px] object-cover object-top" src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?auto=format&amp;fit=crop&amp;q=80&amp;w=800"/>
          <div class="absolute -top-10 -right-10 w-64 h-64 bg-luxury-50 dark:bg-luxury-900 rounded-full -z-0"></div>
         </div>
        </div>
@@ -224,24 +234,24 @@
         </h2>
         <div class="space-y-12">
          <div class="flex items-start">
-          <span class="flex-shrink-0 w-10 h-10 rounded-full border border-black dark:border-white flex items-center justify-center font-bold mr-6">01</span>
+          <span class="flex-shrink-0 w-10 h-10 rounded-full border-2 border-black dark:border-primary-400 text-black dark:text-primary-400 flex items-center justify-center font-bold mr-6 shadow-sm">01</span>
           <div>
-           <h4 class="font-bold uppercase tracking-widest text-xs mb-2">Analysis & Intent</h4>
-           <p class="text-gray-500 dark:text-gray-400 text-sm">We begin by studying the lighting, mood, and intended publication medium of your RAW files.</p>
+           <h4 class="font-bold uppercase tracking-widest text-sm mb-2 text-black dark:text-white">Analysis & Intent</h4>
+           <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">We begin by studying the lighting, mood, and intended publication medium of your RAW files.</p>
           </div>
          </div>
          <div class="flex items-start">
-          <span class="flex-shrink-0 w-10 h-10 rounded-full border border-black dark:border-white flex items-center justify-center font-bold mr-6">02</span>
+          <span class="flex-shrink-0 w-10 h-10 rounded-full border-2 border-black dark:border-primary-400 text-black dark:text-primary-400 flex items-center justify-center font-bold mr-6 shadow-sm">02</span>
           <div>
-           <h4 class="font-bold uppercase tracking-widest text-xs mb-2">Micro-Retouching</h4>
-           <p class="text-gray-500 dark:text-gray-400 text-sm">Our specialists work at 200% zoom, using non-destructive dodge and burn to perfect texture without blurring pores.</p>
+           <h4 class="font-bold uppercase tracking-widest text-sm mb-2 text-black dark:text-white">Micro-Retouching</h4>
+           <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">Our specialists work at 200% zoom, using non-destructive dodge and burn to perfect texture without blurring pores.</p>
           </div>
          </div>
          <div class="flex items-start">
-          <span class="flex-shrink-0 w-10 h-10 rounded-full border border-black dark:border-white flex items-center justify-center font-bold mr-6">03</span>
+          <span class="flex-shrink-0 w-10 h-10 rounded-full border-2 border-black dark:border-primary-400 text-black dark:text-primary-400 flex items-center justify-center font-bold mr-6 shadow-sm">03</span>
           <div>
-           <h4 class="font-bold uppercase tracking-widest text-xs mb-2">Color Engineering</h4>
-           <p class="text-gray-500 dark:text-gray-400 text-sm">Custom LUT development and luminosity masking to create the specific atmosphere requested by the creative director.</p>
+           <h4 class="font-bold uppercase tracking-widest text-sm mb-2 text-black dark:text-white">Color Engineering</h4>
+           <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">Custom LUT development and luminosity masking to create the specific atmosphere requested by the creative director.</p>
           </div>
          </div>
         </div>

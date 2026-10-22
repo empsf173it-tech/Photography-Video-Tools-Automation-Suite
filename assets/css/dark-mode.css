@@ -1,3 +1,53 @@
-/* Dark Mode specifics if not handled by Tailwind */
-/* Most dark mode styles will be handled via Tailwind's dark: variant. */
+/* assets/css/dark-mode.css */
+/* Dark Mode specifics ensuring strong contrast and readability */
 
+.dark {
+  color-scheme: dark;
+}
+
+.dark body {
+  background-color: #0a0a0a !important;
+  color: #f3f4f6 !important;
+}
+
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6 {
+  color: #ffffff !important;
+}
+
+.dark p.text-gray-500,
+.dark span.text-gray-500 {
+  color: #9ca3af !important;
+}
+
+.dark .border-gray-200 {
+  border-color: #27272a !important;
+}
+
+.dark .border-gray-100 {
+  border-color: #1f1f23 !important;
+}
+
+/* FAQ question text in dark mode */
+.dark .faq-item h4 {
+  color: #ffffff !important;
+}
+
+.dark .faq-item:hover h4 {
+  color: #d4a85f !important;
+}
+
+/* Auth social buttons in dark mode */
+.dark .auth-social-btn {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  border-color: rgba(255, 255, 255, 0.15) !important;
+  color: #ffffff !important;
+}
+.dark .auth-social-btn:hover {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}

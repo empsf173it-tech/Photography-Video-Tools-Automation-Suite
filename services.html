@@ -9,38 +9,40 @@
   </script>
   <script>
    tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        primary: {
-                            50: '#fbf8f1',
-                            100: '#f6efdd',
-                            200: '#eddcb9',
-                            300: '#e1c38e',
-                            400: '#d4a85f',
-                            500: '#c5923b',
-                            600: '#9b6c23',
-                            700: '#7c521f',
-                            800: '#67421e',
-                            900: '#55371c',
-                            950: '#301c0c',
-                        },
-                        luxury: {
-                            50: '#f7f7f8',
-                            100: '#efeff1',
-                            200: '#dcdce0',
-                            300: '#bebec6',
-                            400: '#9b9ba6',
-                            500: '#7e7e8b',
-                            600: '#646471',
-                            700: '#53535d',
-                            800: '#46464d',
-                            900: '#1a1a1a',
-                            950: '#0a0a0a',
-                        }
-                    }
-                }
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              50: '#fbf8f1',
+              100: '#f6efdd',
+              200: '#eddcb9',
+              300: '#e1c38e',
+              400: '#d4a85f',
+              500: '#c5923b',
+              600: '#9b6c23',
+              700: '#7c521f',
+              800: '#67421e',
+              900: '#55371c',
+              950: '#301c0c',
+            },
+            luxury: {
+              50: '#f7f7f8',
+              100: '#efeff1',
+              200: '#dcdce0',
+              300: '#bebec6',
+              400: '#9b9ba6',
+              500: '#7e7e8b',
+              600: '#646471',
+              700: '#53535d',
+              800: '#46464d',
+              900: '#1a1a1a',
+              950: '#0a0a0a',
+            }
+          }
+        }
+      }
+    };
             }
         } } }
   </script>
@@ -242,130 +244,145 @@
     </div>
    </section>
    <!-- SECTION 3: Pricing/service comparison cards -->
-   <section class="py-24 bg-white dark:bg-black">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-     <h2 class="font-serif text-4xl md:text-5xl font-bold mb-16 text-center" data-aos="fade-up">
-      Service Tiers
-     </h2>
-     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <!-- Standard -->
-      <div class="border border-gray-200 dark:border-gray-800 rounded-2xl p-8 hover:shadow-xl transition-shadow" data-aos="fade-up">
-       <h3 class="font-serif text-2xl mb-2">
-        Standard
-       </h3>
-       <p class="text-gray-500 text-sm mb-6">
-        For e-commerce and lookbooks.
-       </p>
-       <p class="text-4xl font-bold mb-8">
-        $25
-        <span class="text-sm font-normal text-gray-500">
-         / image
-        </span>
-       </p>
-       <ul class="space-y-4 mb-8 text-sm">
-        <li class="flex items-center">
-         <i class="ph ph-check mr-2">
-         </i>
-         Basic Skin Cleanup
-        </li>
-        <li class="flex items-center">
-         <i class="ph ph-check mr-2">
-         </i>
-         Color Correction
-        </li>
-        <li class="flex items-center">
-         <i class="ph ph-check mr-2">
-         </i>
-         Background Cleaning
-        </li>
-        <li class="flex items-center text-gray-400">
-         <i class="ph ph-x mr-2">
-         </i>
-         Advanced Compositing
-        </li>
-       </ul>
-      </div>
-      <!-- Editorial (Highlighted) -->
-      <div class="bg-black text-white dark:bg-white dark:text-black rounded-2xl p-8 transform md:-translate-y-4 shadow-2xl relative" data-aos="fade-up" data-aos-delay="100">
-       <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white text-black dark:bg-black dark:text-white px-4 py-1 text-xs font-bold uppercase tracking-widest rounded-full whitespace-nowrap">
-        Popular
+    <section class="py-24 bg-white dark:bg-black text-black dark:text-white">
+     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="font-serif text-4xl md:text-5xl font-bold mb-16 text-center text-black dark:text-white" data-aos="fade-up">
+       Service Tiers
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+       <!-- Standard -->
+       <div class="border border-gray-200 dark:border-gray-800 rounded-2xl p-8 hover:shadow-xl transition-all flex flex-col justify-between bg-white dark:bg-[#121212]" data-aos="fade-up">
+        <div>
+         <h3 class="font-serif text-2xl mb-2 text-black dark:text-white font-bold">
+          Standard
+         </h3>
+         <p class="text-gray-500 dark:text-gray-400 text-sm mb-6">
+          For e-commerce and lookbooks.
+         </p>
+         <p class="text-4xl font-bold mb-8 text-black dark:text-white">
+          $25
+          <span class="text-sm font-normal text-gray-500 dark:text-gray-400">
+           / image
+          </span>
+         </p>
+         <ul class="space-y-4 mb-8 text-sm text-gray-700 dark:text-gray-300">
+          <li class="flex items-center">
+           <i class="ph ph-check mr-2 text-primary-600 dark:text-primary-400 font-bold">
+           </i>
+           Basic Skin Cleanup
+          </li>
+          <li class="flex items-center">
+           <i class="ph ph-check mr-2 text-primary-600 dark:text-primary-400 font-bold">
+           </i>
+           Color Correction
+          </li>
+          <li class="flex items-center">
+           <i class="ph ph-check mr-2 text-primary-600 dark:text-primary-400 font-bold">
+           </i>
+           Background Cleaning
+          </li>
+          <li class="flex items-center text-gray-400 dark:text-gray-600">
+           <i class="ph ph-x mr-2">
+           </i>
+           Advanced Compositing
+          </li>
+         </ul>
+        </div>
+        <a href="contact.html" class="btn-primary cta-tab-btn w-full text-center py-3 rounded-full text-sm font-bold shadow-md mt-4">
+         Choose Standard
+        </a>
        </div>
-       <h3 class="font-serif text-2xl mb-2">
-        Editorial
-       </h3>
-       <p class="text-gray-400 dark:text-gray-500 text-sm mb-6">
-        For magazines and campaigns.
-       </p>
-       <p class="text-4xl font-bold mb-8">
-        $75
-        <span class="text-sm font-normal text-gray-400 dark:text-gray-500">
-         / image
-        </span>
-       </p>
-       <ul class="space-y-4 mb-8 text-sm">
-        <li class="flex items-center">
-         <i class="ph ph-check mr-2">
-         </i>
-         High-End Skin Retouching
-        </li>
-        <li class="flex items-center">
-         <i class="ph ph-check mr-2">
-         </i>
-         Garment Cleaning &amp; Shaping
-        </li>
-        <li class="flex items-center">
-         <i class="ph ph-check mr-2">
-         </i>
-         Cinematic Color Grading
-        </li>
-        <li class="flex items-center">
-         <i class="ph ph-check mr-2">
-         </i>
-         2 Rounds of Revisions
-        </li>
-       </ul>
-      </div>
-      <!-- Master -->
-      <div class="border border-gray-200 dark:border-gray-800 rounded-2xl p-8 hover:shadow-xl transition-shadow" data-aos="fade-up" data-aos-delay="200">
-       <h3 class="font-serif text-2xl mb-2">
-        Master
-       </h3>
-       <p class="text-gray-500 text-sm mb-6">
-        For billboards and beauty macro.
-       </p>
-       <p class="text-4xl font-bold mb-8">
-        $150+
-        <span class="text-sm font-normal text-gray-500">
-         / image
-        </span>
-       </p>
-       <ul class="space-y-4 mb-8 text-sm">
-        <li class="flex items-center">
-         <i class="ph ph-check mr-2">
-         </i>
-         Pixel-Perfect Macro Retouching
-        </li>
-        <li class="flex items-center">
-         <i class="ph ph-check mr-2">
-         </i>
-         Complex Compositing
-        </li>
-        <li class="flex items-center">
-         <i class="ph ph-check mr-2">
-         </i>
-         Unlimited Revisions
-        </li>
-        <li class="flex items-center">
-         <i class="ph ph-check mr-2">
-         </i>
-         Dedicated Art Director
-        </li>
-       </ul>
+       <!-- Editorial (Highlighted) -->
+       <div class="bg-black text-white dark:bg-white dark:text-black rounded-2xl p-8 transform md:-translate-y-4 shadow-2xl relative flex flex-col justify-between border-2 border-primary-500" data-aos="fade-up" data-aos-delay="100">
+        <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-primary-600 text-white px-4 py-1 text-xs font-bold uppercase tracking-widest rounded-full whitespace-nowrap shadow-md">
+         Popular
+        </div>
+        <div>
+         <h3 class="font-serif text-2xl mb-2 font-bold">
+          Editorial
+         </h3>
+         <p class="text-gray-300 dark:text-gray-600 text-sm mb-6">
+          For magazines and campaigns.
+         </p>
+         <p class="text-4xl font-bold mb-8">
+          $75
+          <span class="text-sm font-normal text-gray-300 dark:text-gray-600">
+           / image
+          </span>
+         </p>
+         <ul class="space-y-4 mb-8 text-sm text-gray-200 dark:text-gray-800">
+          <li class="flex items-center">
+           <i class="ph ph-check mr-2 text-primary-400 dark:text-primary-600 font-bold">
+           </i>
+           High-End Skin Retouching
+          </li>
+          <li class="flex items-center">
+           <i class="ph ph-check mr-2 text-primary-400 dark:text-primary-600 font-bold">
+           </i>
+           Garment Cleaning &amp; Shaping
+          </li>
+          <li class="flex items-center">
+           <i class="ph ph-check mr-2 text-primary-400 dark:text-primary-600 font-bold">
+           </i>
+           Cinematic Color Grading
+          </li>
+          <li class="flex items-center">
+           <i class="ph ph-check mr-2 text-primary-400 dark:text-primary-600 font-bold">
+           </i>
+           2 Rounds of Revisions
+          </li>
+         </ul>
+        </div>
+        <a href="contact.html" class="cta-tab-btn w-full text-center py-3 rounded-full text-sm font-bold shadow-lg mt-4 bg-white text-black hover:bg-gray-100 dark:bg-black dark:text-white dark:hover:bg-neutral-800">
+         Choose Editorial
+        </a>
+       </div>
+       <!-- Master -->
+       <div class="border border-gray-200 dark:border-gray-800 rounded-2xl p-8 hover:shadow-xl transition-all flex flex-col justify-between bg-white dark:bg-[#121212]" data-aos="fade-up" data-aos-delay="200">
+        <div>
+         <h3 class="font-serif text-2xl mb-2 text-black dark:text-white font-bold">
+          Master
+         </h3>
+         <p class="text-gray-500 dark:text-gray-400 text-sm mb-6">
+          For billboards and beauty macro.
+         </p>
+         <p class="text-4xl font-bold mb-8 text-black dark:text-white">
+          $150+
+          <span class="text-sm font-normal text-gray-500 dark:text-gray-400">
+           / image
+          </span>
+         </p>
+         <ul class="space-y-4 mb-8 text-sm text-gray-700 dark:text-gray-300">
+          <li class="flex items-center">
+           <i class="ph ph-check mr-2 text-primary-600 dark:text-primary-400 font-bold">
+           </i>
+           Pixel-Perfect Macro Retouching
+          </li>
+          <li class="flex items-center">
+           <i class="ph ph-check mr-2 text-primary-600 dark:text-primary-400 font-bold">
+           </i>
+           Complex Compositing
+          </li>
+          <li class="flex items-center">
+           <i class="ph ph-check mr-2 text-primary-600 dark:text-primary-400 font-bold">
+           </i>
+           Unlimited Revisions
+          </li>
+          <li class="flex items-center">
+           <i class="ph ph-check mr-2 text-primary-600 dark:text-primary-400 font-bold">
+           </i>
+           Dedicated Art Director
+          </li>
+         </ul>
+        </div>
+        <a href="contact.html" class="btn-primary cta-tab-btn w-full text-center py-3 rounded-full text-sm font-bold shadow-md mt-4">
+         Choose Master
+        </a>
+       </div>
       </div>
      </div>
-    </div>
-   </section>
-   <!-- SECTION 4: FAQ accordion section -->
+    </section>
+    <!-- SECTION 4: FAQ accordion section -->
    <section class="py-24 bg-luxury-50 dark:bg-luxury-900">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
      <h2 class="font-serif text-4xl font-bold mb-12 text-center" data-aos="fade-up">
@@ -377,7 +394,7 @@
 
 
         <button class="w-full flex items-center justify-between p-6 text-left focus:outline-none group">
-         <h4 class="font-bold text-lg pr-8 transition-colors group-hover:text-primary-700 dark:text-primary-400 font-bold">
+         <h4 class="font-bold text-lg pr-8 transition-colors group-hover:text-primary-700 text-black dark:text-white font-bold">
           What is the typical turnaround time?
          </h4>
          <i class="ph ph-plus text-xl transition-transform duration-300"></i>
@@ -391,7 +408,7 @@
        <!-- FAQ Item 2 -->
        <div class="faq-item bg-white dark:bg-black rounded-2xl border border-gray-100 dark:border-gray-800 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
         <button class="w-full flex items-center justify-between p-6 text-left focus:outline-none group">
-         <h4 class="font-bold text-lg pr-8 transition-colors group-hover:text-primary-700 dark:text-primary-400 font-bold">
+         <h4 class="font-bold text-lg pr-8 transition-colors group-hover:text-primary-700 text-black dark:text-white font-bold">
           Do you provide bulk discounts?
          </h4>
          <i class="ph ph-plus text-xl transition-transform duration-300"></i>
@@ -405,7 +422,7 @@
        <!-- FAQ Item 3 -->
        <div class="faq-item bg-white dark:bg-black rounded-2xl border border-gray-100 dark:border-gray-800 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
         <button class="w-full flex items-center justify-between p-6 text-left focus:outline-none group">
-         <h4 class="font-bold text-lg pr-8 transition-colors group-hover:text-primary-700 dark:text-primary-400 font-bold">
+         <h4 class="font-bold text-lg pr-8 transition-colors group-hover:text-primary-700 text-black dark:text-white font-bold">
           How do revisions work?
          </h4>
          <i class="ph ph-plus text-xl transition-transform duration-300"></i>

@@ -9,38 +9,40 @@
   </script>
   <script>
    tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        primary: {
-                            50: '#fbf8f1',
-                            100: '#f6efdd',
-                            200: '#eddcb9',
-                            300: '#e1c38e',
-                            400: '#d4a85f',
-                            500: '#c5923b',
-                            600: '#9b6c23',
-                            700: '#7c521f',
-                            800: '#67421e',
-                            900: '#55371c',
-                            950: '#301c0c',
-                        },
-                        luxury: {
-                            50: '#f7f7f8',
-                            100: '#efeff1',
-                            200: '#dcdce0',
-                            300: '#bebec6',
-                            400: '#9b9ba6',
-                            500: '#7e7e8b',
-                            600: '#646471',
-                            700: '#53535d',
-                            800: '#46464d',
-                            900: '#1a1a1a',
-                            950: '#0a0a0a',
-                        }
-                    }
-                }
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              50: '#fbf8f1',
+              100: '#f6efdd',
+              200: '#eddcb9',
+              300: '#e1c38e',
+              400: '#d4a85f',
+              500: '#c5923b',
+              600: '#9b6c23',
+              700: '#7c521f',
+              800: '#67421e',
+              900: '#55371c',
+              950: '#301c0c',
+            },
+            luxury: {
+              50: '#f7f7f8',
+              100: '#efeff1',
+              200: '#dcdce0',
+              300: '#bebec6',
+              400: '#9b9ba6',
+              500: '#7e7e8b',
+              600: '#646471',
+              700: '#53535d',
+              800: '#46464d',
+              900: '#1a1a1a',
+              950: '#0a0a0a',
+            }
+          }
+        }
+      }
+    };
             }
         } } }
   </script>
@@ -150,7 +152,7 @@
      <h1 class="font-serif text-4xl sm:text-5xl md:text-7xl font-bold mb-6" data-aos="fade-up" data-aos-delay="100">
       Let's Discuss Your Project
      </h1>
-     <p class="text-gray-500 text-lg" data-aos="fade-up" data-aos-delay="200">
+     <p class="text-gray-600 dark:text-gray-300 text-lg" data-aos="fade-up" data-aos-delay="200">
       Whether you need a single editorial cover or a massive e-commerce batch, we're ready to elevate your imagery.
      </p>
     </div>
@@ -164,26 +166,26 @@
        <form class="space-y-6 bg-luxury-50 dark:bg-luxury-900 p-10 rounded-2xl">
         <div class="grid grid-cols-1 gap-6">
          <div>
-          <label class="block text-xs font-bold uppercase tracking-wider mb-2">
+          <label class="block text-xs font-bold uppercase tracking-wider mb-2 text-gray-700 dark:text-gray-200">
            First Name
           </label>
           <input class="w-full bg-white dark:bg-black border border-gray-200 dark:border-gray-800 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-gray-500" type="text"/>
          </div>
          <div>
-          <label class="block text-xs font-bold uppercase tracking-wider mb-2">
+          <label class="block text-xs font-bold uppercase tracking-wider mb-2 text-gray-700 dark:text-gray-200">
            Last Name
           </label>
           <input class="w-full bg-white dark:bg-black border border-gray-200 dark:border-gray-800 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-gray-500" type="text"/>
          </div>
         </div>
         <div>
-         <label class="block text-xs font-bold uppercase tracking-wider mb-2">
+         <label class="block text-xs font-bold uppercase tracking-wider mb-2 text-gray-700 dark:text-gray-200">
           Email Address
          </label>
          <input class="w-full bg-white dark:bg-black border border-gray-200 dark:border-gray-800 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-gray-500" type="email"/>
         </div>
         <div>
-         <label class="block text-xs font-bold uppercase tracking-wider mb-2">
+         <label class="block text-xs font-bold uppercase tracking-wider mb-2 text-gray-700 dark:text-gray-200">
           Service Required
          </label>
          <select class="w-full bg-white dark:bg-black border border-gray-200 dark:border-gray-800 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-gray-500">
@@ -202,7 +204,7 @@
          </select>
         </div>
         <div>
-         <label class="block text-xs font-bold uppercase tracking-wider mb-2">
+         <label class="block text-xs font-bold uppercase tracking-wider mb-2 text-gray-700 dark:text-gray-200">
           Project Details
          </label>
          <textarea class="w-full bg-white dark:bg-black border border-gray-200 dark:border-gray-800 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-gray-500" rows="4"></textarea>
@@ -221,18 +223,44 @@
         <p class="text-gray-500 dark:text-gray-400 text-lg mb-8 max-w-md mx-auto leading-relaxed">
          Our flagship studio in the heart of Milan's fashion district is where the magic happens. We're available for both remote collaborations and in-person consultations by appointment.
         </p>
-        <div class="space-y-4 mb-8">
-         <p class="text-gray-800 dark:text-gray-200 text-xl font-medium">
-          124 Via della Spiga<br>
-          Milano, MI 20121, Italy
-         </p>
-         <p class="text-gray-800 dark:text-gray-200 text-xl font-medium">
-          +39 02 1234 5678
-         </p>
+        <div class="space-y-6 mb-10 text-left max-w-md mx-auto">
+         <div class="flex items-start gap-4">
+          <div class="w-12 h-12 rounded-full bg-primary-100 dark:bg-primary-950/60 text-primary-700 dark:text-primary-400 flex items-center justify-center flex-shrink-0 shadow-sm">
+           <i class="ph ph-map-pin text-2xl font-bold"></i>
+          </div>
+          <div>
+           <h5 class="text-xs font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400 mb-1">Studio Location</h5>
+           <p class="text-gray-900 dark:text-gray-100 text-lg font-medium leading-relaxed">
+            124 Via della Spiga<br>
+            Milano, MI 20121, Italy
+           </p>
+          </div>
+         </div>
+
+         <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-full bg-primary-100 dark:bg-primary-950/60 text-primary-700 dark:text-primary-400 flex items-center justify-center flex-shrink-0 shadow-sm">
+           <i class="ph ph-phone text-2xl font-bold"></i>
+          </div>
+          <div>
+           <h5 class="text-xs font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400 mb-1">Direct Line</h5>
+           <a href="tel:+390212345678" class="text-gray-900 dark:text-gray-100 hover:text-primary-600 dark:hover:text-primary-400 text-lg font-medium transition-colors">
+            +39 02 1234 5678
+           </a>
+          </div>
+         </div>
+
+         <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-full bg-primary-100 dark:bg-primary-950/60 text-primary-700 dark:text-primary-400 flex items-center justify-center flex-shrink-0 shadow-sm">
+           <i class="ph ph-envelope-simple text-2xl font-bold"></i>
+          </div>
+          <div>
+           <h5 class="text-xs font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400 mb-1">Email Inquiries</h5>
+           <a href="mailto:hello@raw.com" class="text-gray-900 dark:text-gray-100 hover:text-primary-600 dark:hover:text-primary-400 text-lg font-medium transition-colors border-b border-gray-400 dark:border-gray-600 pb-0.5">
+            hello@raw.com
+           </a>
+          </div>
+         </div>
         </div>
-        <p class="text-2xl text-black dark:text-white font-bold border-b-2 border-black dark:border-white pb-1 inline-block">
-         hello@raw.com
-        </p>
        </div>
        <div class="w-full">
         <h4 class="text-xs font-bold uppercase tracking-[0.3em] text-gray-400 mb-6">

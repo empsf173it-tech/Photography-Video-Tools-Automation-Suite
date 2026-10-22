@@ -334,3 +334,153 @@ a:hover .logo-bolt {
     font-size: 1.25rem !important;
   }
 }
+
+/* ========================================================
+   Enhanced Global Styles & Bug Fixes
+   ======================================================== */
+
+/* 1. Equal Navbar Button Heights */
+.nav-btn-height {
+  height: 40px !important;
+  min-height: 40px !important;
+  max-height: 40px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+}
+
+/* 2. Theme Toggle & Hover Visibility */
+.theme-toggle {
+  color: #111111;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.theme-toggle:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #7c521f;
+}
+.dark .theme-toggle {
+  color: #f3f4f6 !important;
+}
+.dark .theme-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  color: #d4a85f !important;
+}
+.dark .theme-toggle i {
+  color: inherit !important;
+}
+
+/* 3. Primary Button & CTA Tab Buttons with Hover Effects */
+.btn-primary,
+.bg-primary-700 {
+  background-color: #7c521f !important;
+  color: #ffffff !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-primary:hover,
+.hover\:bg-primary-800:hover {
+  background-color: #67421e !important;
+  color: #ffffff !important;
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 10px 20px -5px rgba(124, 82, 31, 0.4);
+}
+.dark .btn-primary,
+.dark .dark\:bg-primary-400 {
+  background-color: #d4a85f !important;
+  color: #0a0a0a !important;
+}
+.dark .btn-primary:hover,
+.dark .dark\:hover\:bg-primary-300:hover {
+  background-color: #e1c38e !important;
+  color: #0a0a0a !important;
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 10px 20px -5px rgba(212, 168, 95, 0.4);
+}
+
+/* Hover effect on tab button / CTA buttons */
+.cta-tab-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.cta-tab-btn:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
+}
+.dark .cta-tab-btn:hover {
+  box-shadow: 0 12px 25px rgba(212, 168, 95, 0.3);
+}
+
+/* 4. Global Dark Mode Contrast Guarantees */
+.dark body {
+  background-color: #0a0a0a !important;
+  color: #f0f0f0 !important;
+}
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6 {
+  color: #ffffff;
+}
+.dark .text-heading {
+  color: #ffffff !important;
+}
+.dark .text-body-muted {
+  color: #9ca3af !important;
+}
+
+/* 5. Authentication Page Styling */
+.auth-input {
+  color: #111111 !important;
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  border: 1px solid #e5e7eb !important;
+}
+.dark .auth-input {
+  color: #ffffff !important;
+  background-color: rgba(18, 18, 18, 0.8) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
+.dark .auth-input::placeholder {
+  color: #9ca3af !important;
+}
+.auth-input:focus {
+  border-color: #7c521f !important;
+  box-shadow: 0 0 0 2px rgba(124, 82, 31, 0.2) !important;
+}
+.dark .auth-input:focus {
+  border-color: #d4a85f !important;
+  box-shadow: 0 0 0 2px rgba(212, 168, 95, 0.3) !important;
+}
+
+/* 6. Feature Card styling for About page */
+.about-feature-card {
+  background: #ffffff;
+  border: 1px solid #f0f0f0;
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+}
+.about-feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 30px -5px rgba(0, 0, 0, 0.1);
+  border-color: rgba(124, 82, 31, 0.3);
+}
+.dark .about-feature-card {
+  background: #141414;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.4);
+}
+.dark .about-feature-card:hover {
+  border-color: rgba(212, 168, 95, 0.4);
+  box-shadow: 0 20px 30px -5px rgba(0, 0, 0, 0.6);
+}
+
