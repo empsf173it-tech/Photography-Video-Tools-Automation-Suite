@@ -333,6 +333,38 @@ a:hover .logo-bolt {
   header .text-2xl {
     font-size: 1.25rem !important;
   }
+
+  /* 1024px Footer optimization: prevent brand name and section headings from overlapping */
+  footer .grid.lg\:grid-cols-4 {
+    grid-template-columns: 1.4fr 1fr 1fr 1.25fr !important;
+    gap: 2rem !important;
+  }
+  footer a.font-serif {
+    font-size: 1.25rem !important;
+    letter-spacing: 0.18em !important;
+    white-space: nowrap !important;
+  }
+}
+
+/* Footer layout safety */
+footer .grid > div {
+  min-width: 0;
+}
+footer a.font-serif {
+  max-width: 100%;
+}
+
+/* Service Page Popular Badge */
+.badge-popular {
+  background-color: #7c521f !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(124, 82, 31, 0.4) !important;
+  line-height: 1.2;
+}
+.dark .badge-popular {
+  background-color: #d4a85f !important;
+  color: #0a0a0a !important;
+  box-shadow: 0 4px 14px rgba(212, 168, 95, 0.4) !important;
 }
 
 /* ========================================================
